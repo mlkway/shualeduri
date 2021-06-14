@@ -51,6 +51,9 @@ class NavHomeFragment : Fragment(), BottomNavigationView.OnNavigationItemSelecte
             R.id.tvshowsFragment -> {
                 controller.navigate(R.id.show_tvshows)
             }
+            R.id.profileFragment ->{
+                controller.navigate(R.id.show_profile)
+            }
         }
         return true
     }

@@ -9,9 +9,11 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import com.raywenderlich.login_activit.R
 import com.raywenderlich.login_activit.databinding.RegistrationScreenFragmentBinding
+import com.raywenderlich.login_activit.user.User
 
 class RegistrationScreenFragment : Fragment() {
 
@@ -54,6 +56,7 @@ class RegistrationScreenFragment : Fragment() {
                     if (task.isSuccessful) {
                         // Sign in success, update UI with the signed-in user's information
                         succsess()
+                        FirebaseDatabase.getInstance().getReference("users").child(FirebaseAuth.getInstance().currentUser?.uid.toString()).setValue(User(email))
                     } else {
                         // If sign in fails, display a message to the user.
 

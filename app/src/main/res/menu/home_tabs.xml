@@ -18,6 +18,11 @@
         android:icon="@drawable/ic_heart"
         android:title="Favorites"/>
 
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profileuser"
+        android:title="Profile"/>
+
 
 
 </menu>
