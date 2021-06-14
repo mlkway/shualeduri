@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "566802000814",
+    "project_id": "authreg-1382b",
+    "storage_bucket": "authreg-1382b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566802000814:android:686df568f0cf053286763f",
+        "android_client_info": {
+          "package_name": "com.raywenderlich.login_activit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566802000814-sb7t2jphkph011ektr0fhe3ijsnb59ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS9QQdlpqXHpQpJpAkKAdoioIub8XTVi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566802000814-sb7t2jphkph011ektr0fhe3ijsnb59ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

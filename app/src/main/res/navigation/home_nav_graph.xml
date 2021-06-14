@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.raywenderlich.login_activit.ui.home.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragmentScreen"
+            app:destination="@id/detailFragmentScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.raywenderlich.login_activit.ui.favorites.FavoritesFragment"
+        android:label="favorites_fragment">
+        <action
+            android:id="@+id/action_favoritesFragment_to_tvShowsDetailFragment"
+            app:destination="@id/tvShowsDetailFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_detailFragmentScreen"
+            app:destination="@id/detailFragmentScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/tvshowsFragment"
+        android:name="com.raywenderlich.login_activit.ui.tvShows.TvshowsFragment"
+        android:label="tvshows_fragment">
+        <action
+            android:id="@+id/action_tvshowsFragment_to_tvShowsDetailFragment"
+            app:destination="@id/tvShowsDetailFragment" />
+    </fragment>
+
+
+
+    <action
+        android:id="@+id/show_home"
+        app:destination="@+id/homeFragment"
+        app:popUpTo="@id/home_nav_graph"/>
+
+    <action
+        android:id="@+id/show_favorites"
+        app:destination="@id/favoritesFragment"
+        app:popUpTo="@id/home_nav_graph"/>
+
+    <action
+        android:id="@+id/show_tvshows"
+        app:destination="@id/tvshowsFragment"
+        app:popUpTo="@id/home_nav_graph"/>
+    <fragment
+        android:id="@+id/detailFragmentScreen"
+        android:name="com.raywenderlich.login_activit.ui.detailMovies.DetailFragmentScreen"
+        android:label="DetailFragmentScreen" />
+    <fragment
+        android:id="@+id/tvShowsDetailFragment"
+        android:name="com.raywenderlich.login_activit.ui.tvshowdetails.TvShowsDetailFragment"
+        android:label="TvShowsDetailFragment" />
+
+</navigation>
